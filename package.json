@@ -15,10 +15,18 @@
   "dependencies": {
     "@babel/core": "^7.9.0",
     "@types/axios": "^0.14.0",
+    "@types/next-redux-wrapper": "^3.0.0",
+    "@types/react-redux": "^7.1.7",
+    "@types/redux": "^3.6.0",
+    "@types/redux-thunk": "^2.1.0",
     "babel-core": "^7.0.0-bridge.0",
     "next": "^9.3.5",
+    "next-redux-wrapper": "^5.0.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.5",
