@@ -3,13 +3,14 @@
 import { connect } from "react-redux";
 
 import searchReposActions from "store/repoSearch/actions";
+import { Header } from "components";
 
 function HomePage({ fetchSearch }) {
   fetchSearch({
     q: "js",
     sort: "stars",
     order: "desc",
-    per_page: 1,
+    per_page: 30,
     page: 1,
   });
   // Promise.all([
@@ -24,7 +25,11 @@ function HomePage({ fetchSearch }) {
   // ]).then((response) => {
   //   console.log(response);
   // });
-  return <div>Welcome to Next.js!</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 const mapStateToProps = ({ repoSearchReducer }) => ({

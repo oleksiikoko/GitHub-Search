@@ -10,14 +10,18 @@ const Actions = {
     };
   },
   fetchSearch: (searchQuery: ISearchRepository) => async (dispatch) => {
-    const repos = await gitApi.searchRepository(searchQuery);
-    let { items, total_count } = repos;
+    try {
+      const repos = await gitApi.searchRepository(searchQuery);
+      let { items, total_count } = repos;
 
-    items = parseRepos(items);
-    items = await addTopics(items);
-    items = await addIssuesNeedHelp(items);
+      items = parseRepos(items);
+      items = await addTopics(items);
+      items = await addIssuesNeedHelp(items);
 
-    dispatch(Actions.setSearchResult({ total_count, repos: items }));
+      dispatch(Actions.setSearchResult({ total_count, repos: items }));
+    } catch (err) {
+      console.log(err);
+    }
   },
 };
 
@@ -45,7 +49,7 @@ const parseRepos = (repos) => {
       description,
       stargazers_count,
       language,
-      license: license.name,
+      license: license ? license.name : null,
       updated_at,
     };
   });
@@ -54,12 +58,15 @@ const parseRepos = (repos) => {
 const addTopics = (repos) => {
   return Promise.all(
     repos.map(async (item) => {
-      const topics = await gitApi.getRepositoryTopics(item.owner, item.name);
-
-      return {
-        topics: topics.names,
-        ...item,
-      };
+      try {
+        const topics = await gitApi.getRepositoryTopics(item.owner, item.name);
+        return {
+          topics: topics ? topics.names : null,
+          ...item,
+        };
+      } catch (error) {
+        return item;
+      }
     })
   );
 };
@@ -67,15 +74,18 @@ const addTopics = (repos) => {
 const addIssuesNeedHelp = (repos) => {
   return Promise.all(
     repos.map(async (item) => {
-      const issues = await gitApi.getRepositoryIssuesNeedHelp(
-        item.owner,
-        item.name
-      );
-
-      return {
-        issues_need_help: issues.length,
-        ...item,
-      };
+      try {
+        const issues = await gitApi.getRepositoryIssuesNeedHelp(
+          item.owner,
+          item.name
+        );
+        return {
+          issues_need_help: issues.length,
+          ...item,
+        };
+      } catch {
+        return item;
+      }
     })
   );
 };

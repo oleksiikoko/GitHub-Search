@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  color: hsla(0, 0%, 100%, 0.7);
+  background-color: #24292e;
+  padding: 16px;
+  font-size: 14px;
+}
+
+.git-logo {
+  svg {
+    path {
+      fill: #ffffff;
+    }
+  }
+}
