@@ -2,13 +2,18 @@ import React, { useState } from "react";
 import classNames from "classnames";
 import AutocompleteItem from "components/AutocompleteItem";
 
-const Search = () => {
+const Search = ({ onSearch }) => {
   const [inputFocused, setInputFocused] = useState(false);
   const onInputFocus = () => {
     setInputFocused(true);
   };
   const onInputBlur = () => {
     setInputFocused(false);
+  };
+  const onEnter = (event) => {
+    if (event.key === "Enter") {
+      onSearch(event.target.value);
+    }
   };
   return (
     <div className="search">
@@ -22,6 +27,7 @@ const Search = () => {
           placeholder="Search or jump to..."
           onFocus={onInputFocus}
           onBlur={onInputBlur}
+          onKeyDown={onEnter}
         />
 
         <img

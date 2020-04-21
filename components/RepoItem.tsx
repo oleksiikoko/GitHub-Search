@@ -1,6 +1,28 @@
 import "styles/RepoItem.global.scss";
+import languageConfig from "assets/laguage.json";
+import { IRepositoryItem } from "interfaces";
+import kFormatter from "utils/kFormatter";
 
-const RepoItem = () => {
+import { ItemTopics } from "components";
+import ItemAbout from "./ItemAbout";
+
+interface IProps {
+  item: IRepositoryItem;
+}
+
+const RepoItem: React.FC<IProps> = ({ item }) => {
+  const {
+    full_name,
+    owner,
+    html_url,
+    description,
+    stargazers_count,
+    language,
+    license,
+    updated_at,
+    topics,
+    issues_need_help,
+  } = item;
   return (
     <div className="repo-item">
       <div className="repo-item__icon">
@@ -20,36 +42,18 @@ const RepoItem = () => {
       </div>
       <div className="repo-item__info">
         <div className="repo-item__name">
-          <a href="/">name/name</a>
+          <a href="/">{full_name}</a>
         </div>
-        <p className="repo-item__description">Desc</p>
-        <div className="repo-item__topics">
-          <div className="topic">topic</div>
-          <div className="topic">topic</div>
-        </div>
-        <div className="repo-item__about">
-          <div className="stars">
-            <svg
-              aria-label="star"
-              viewBox="0 0 14 16"
-              version="1.1"
-              width="14"
-              height="16"
-              role="img"
-            >
-              <path
-                fill-rule="evenodd"
-                fill="#586069"
-                d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"
-              ></path>
-            </svg>
-            162k
-          </div>
-          <div className="language">JavaScript</div>
-          <div className="license">MIT license</div>
-          <div className="updated">Updated 11 hour ago</div>
-          <div className="issues-need-help">1 issues need help</div>
-        </div>
+        <p className="repo-item__description">{description}</p>
+        <ItemTopics topics={topics} />
+        <ItemAbout
+          full_name={full_name}
+          stargazers_count={stargazers_count}
+          language={language}
+          license={license}
+          updated_at={updated_at}
+          issues_need_help={issues_need_help}
+        />
       </div>
     </div>
   );

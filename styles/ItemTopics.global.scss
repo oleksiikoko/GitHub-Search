@@ -1,0 +1,13 @@
+.topics {
+  &__topic {
+    display: inline-block;
+    background-color: #f1f8ff;
+    margin: 2px 4px 2px 0;
+    padding: 2px 5px;
+    color: #0366d6;
+    font-size: 12px;
+    &:hover {
+      background-color: #def;
+    }
+  }
+}

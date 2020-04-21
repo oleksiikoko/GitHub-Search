@@ -7,29 +7,19 @@ import { Header } from "components";
 import { SearchResult } from "containers";
 
 function HomePage({ total_count, repos, fetchSearch }) {
-  // fetchSearch({
-  //   q: "js",
-  //   sort: "stars",
-  //   order: "desc",
-  //   per_page: 30,
-  //   page: 1,
-  // });
-  // Promise.all([
-  //   gitApi.searchRepository({
-  //     q: "js",
-  //     // ,sort:"stars",order="desc"
-  //     per_page: 1,
-  //     page: 1,
-  //   }),
-  //   gitApi.getRepositoryTopics("vuejs", "vue"),
-  //   gitApi.getRepositoryIssuesNeedHelp("vuejs", "vue"),
-  // ]).then((response) => {
-  //   console.log(response);
-  // });
+  const onSearch = (request: string) => {
+    fetchSearch({
+      q: request,
+      sort: "stars",
+      order: "desc",
+      per_page: 30,
+      page: 1,
+    });
+  };
   return (
     <>
-      <Header />
-      {!repos && <SearchResult />}
+      <Header onSearch={onSearch} />
+      {repos && <SearchResult total_count={total_count} repos={repos} />}
     </>
   );
 }

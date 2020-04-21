@@ -2,7 +2,7 @@ export default interface IRepositoryItem {
   full_name: string;
   owner: string;
   html_url: string;
-  desctiption: string;
+  description: string;
   stargazers_count: number;
   language: string;
   license: string;

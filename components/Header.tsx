@@ -1,7 +1,7 @@
 import "styles/Header.global.scss";
 import { Search } from "containers";
 
-const Header = () => {
+const Header = ({ onSearch }) => {
   return (
     <div className="header">
       <div className="header__content">
@@ -21,7 +21,7 @@ const Header = () => {
           </svg>
         </div>
 
-        <Search />
+        <Search onSearch={onSearch} />
       </div>
     </div>
   );
