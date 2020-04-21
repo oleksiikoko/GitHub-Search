@@ -1,0 +1,49 @@
+.repo-item {
+  width: 60%;
+  display: flex;
+  border-top: 1px solid #e1e4e8;
+  margin: 10px;
+  padding: 6px 3px;
+
+  &__icon {
+    padding-top: 8px;
+    margin-right: 8px;
+  }
+
+  &__name {
+    vertical-align: middle;
+  }
+
+  &__description {
+    font-size: 14px;
+    color: #24292e;
+  }
+
+  &__info {
+    > div {
+      margin-top: 3px;
+    }
+  }
+
+  &__topics {
+    // display: flex;
+
+    .topic {
+      display: inline-block;
+      background: #def;
+      margin: 2px 4px 2px 0;
+      padding: 2px 5px;
+      color: #0366d6;
+      font-size: 12px;
+    }
+  }
+
+  &__about {
+    font-size: 12px;
+    color: #586069;
+    > div {
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}

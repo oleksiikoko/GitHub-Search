@@ -6,6 +6,7 @@
     display: flex;
     border-radius: 3px;
     width: 300px;
+    transition: width 300ms;
 
     input {
       background-color: transparent;
@@ -14,8 +15,8 @@
       padding: 0 8px;
       font-size: 14px;
       color: hsla(0, 0%, 100%, 0.9);
-
       font-weight: 400;
+
       &::placeholder {
         color: hsla(0, 0%, 100%, 0.43);
       }
@@ -23,6 +24,9 @@
       &:focus,
       &:focus-within {
         outline: none;
+        &::placeholder {
+          color: hsla(0, 2%, 12%, 0.43);
+        }
       }
     }
     img {
@@ -50,10 +54,10 @@
   &__autocomplete {
     position: absolute;
     top: 31px;
-    .autocomplete {
-      background: white;
-      > div {
-      }
-    }
+    // .autocomplete {
+    //   background: white;
+    //   > div {
+    //   }
+    // }
   }
 }

@@ -4,15 +4,16 @@ import { connect } from "react-redux";
 
 import searchReposActions from "store/repoSearch/actions";
 import { Header } from "components";
+import { SearchResult } from "containers";
 
-function HomePage({ fetchSearch }) {
-  fetchSearch({
-    q: "js",
-    sort: "stars",
-    order: "desc",
-    per_page: 30,
-    page: 1,
-  });
+function HomePage({ total_count, repos, fetchSearch }) {
+  // fetchSearch({
+  //   q: "js",
+  //   sort: "stars",
+  //   order: "desc",
+  //   per_page: 30,
+  //   page: 1,
+  // });
   // Promise.all([
   //   gitApi.searchRepository({
   //     q: "js",
@@ -28,12 +29,14 @@ function HomePage({ fetchSearch }) {
   return (
     <>
       <Header />
+      {!repos && <SearchResult />}
     </>
   );
 }
 
 const mapStateToProps = ({ repoSearchReducer }) => ({
-  // posts: repoSearchReducer.posts,
+  total_count: repoSearchReducer.total_count,
+  repos: repoSearchReducer.repos,
 });
 const mapDispatchToProps = { fetchSearch: searchReposActions.fetchSearch };
 

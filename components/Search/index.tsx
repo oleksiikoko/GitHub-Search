@@ -3,7 +3,7 @@ import classNames from "classnames";
 import AutocompleteItem from "components/AutocompleteItem";
 
 const Search = () => {
-  const [inputFocused, setInputFocused] = useState(true);
+  const [inputFocused, setInputFocused] = useState(false);
   const onInputFocus = () => {
     setInputFocused(true);
   };
@@ -30,9 +30,7 @@ const Search = () => {
         />
       </div>
       <div className="search__autocomplete">
-        <div className="autocomplete">
-          <AutocompleteItem />
-        </div>
+        <div className="autocomplete">{/* <AutocompleteItem /> */}</div>
       </div>
     </div>
   );
