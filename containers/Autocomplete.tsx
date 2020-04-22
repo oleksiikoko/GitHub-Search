@@ -1,16 +1,19 @@
 import { AutocompleteItem } from "components";
 
-const Autocomplete: React.FC<{ searchCache: string[]; search: string }> = ({
-  searchCache,
-  search,
-}) => {
-  console.log(searchCache);
+const Autocomplete: React.FC<{
+  searchCache: string[];
+  search: string;
+  onSearch: Function;
+}> = ({ searchCache, search, onSearch }) => {
   return (
     <div className="autocomplete">
-      {searchCache !== [] &&
+      {searchCache.length !== 0 ? (
         searchCache.map((item, index) => (
-          <AutocompleteItem key={index} search={item} />
-        ))}
+          <AutocompleteItem onClick={onSearch} key={index} search={item} />
+        ))
+      ) : (
+        <AutocompleteItem onClick={onSearch} search="" />
+      )}
     </div>
   );
 };

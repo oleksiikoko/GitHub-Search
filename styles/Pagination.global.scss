@@ -1,0 +1,29 @@
+.pagination {
+  margin: 40px;
+  display: flex;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+  width: fit-content;
+  &__item {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0366d6;
+    padding: 7px 12px;
+    border-right: 1px solid #e1e4e8;
+
+    cursor: pointer;
+    &:last-child {
+      border: none;
+    }
+    &--enable {
+      background-color: #0366d6;
+      color: #fff;
+      border-color: #0366d6;
+    }
+    &--disable {
+      background-color: #fafbfc;
+      color: #d1d5da;
+      cursor: default;
+    }
+  }
+}

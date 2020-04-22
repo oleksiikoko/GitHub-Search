@@ -12,7 +12,9 @@ const Search = ({ onSearch }) => {
     setSearchCacheValue(searchCache.searchIn(inputValue));
   };
   const onInputBlur = () => {
-    setInputFocused(false);
+    setTimeout(() => {
+      setInputFocused(false);
+    }, 500);
   };
   const onInputChange = (event) => {
     setSearchCacheValue(searchCache.searchIn(inputValue));
@@ -49,13 +51,14 @@ const Search = ({ onSearch }) => {
       </div>
       <div className="search__autocomplete">
         {inputFocused && (
-          // <div className="autocomplete">
-          //   <AutocompleteItem
-          //     searchCache={searchCacheValue}
-          //     search={inputValue}
-          //   />
-          // </div>
-          <Autocomplete searchCache={searchCacheValue} search={inputValue} />
+          <Autocomplete
+            onSearch={(value) => {
+              setInputValue(value);
+              onSearch(value);
+            }}
+            searchCache={searchCacheValue}
+            search={inputValue}
+          />
         )}
       </div>
     </div>
