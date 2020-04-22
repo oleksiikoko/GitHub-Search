@@ -8,8 +8,10 @@ import { Header, Pagination, SearchResult } from "components";
 function HomePage({ total_count, repos, fetchSearch }) {
   const [curPage, setCurPage] = useState(1);
   const [curRequest, setCurRequest] = useState("");
+  const [loading, setloading] = useState(false);
 
   const onSearch = (request: string) => {
+    setloading(true);
     setCurRequest(request);
     fetchSearch({
       q: request,
@@ -22,6 +24,7 @@ function HomePage({ total_count, repos, fetchSearch }) {
   };
 
   const onPaginationClick = (value) => {
+    setloading(true);
     if (value === "Previous") {
       if (curPage !== 1) setCurPage(curPage - 1);
     } else if (value === "Next") {
@@ -41,12 +44,17 @@ function HomePage({ total_count, repos, fetchSearch }) {
       per_page: 30,
       page: curPage,
     });
+    setloading(true);
   }, [curPage]);
+
+  useEffect(() => {
+    setloading(false);
+  }, [repos]);
 
   return (
     <>
       <Header onSearch={onSearch} />
-      {repos && (
+      {repos && !loading && (
         <>
           <SearchResult total_count={total_count} repos={repos} />
           <div className="content-center">
@@ -57,6 +65,11 @@ function HomePage({ total_count, repos, fetchSearch }) {
             />
           </div>
         </>
+      )}
+      {loading && (
+        <div className="content-center">
+          <h3>Loading...</h3>
+        </div>
       )}
     </>
   );

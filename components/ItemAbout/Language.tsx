@@ -8,7 +8,9 @@ const Language: React.FC<{ language: string }> = ({ language }) => {
         <div
           className="d-ib"
           style={{
-            backgroundColor: `${languageConfig[language].color}`,
+            backgroundColor: `${
+              languageConfig[language] && languageConfig[language].color
+            }`,
           }}
         ></div>
         <p className="d-ib"> {language}</p>

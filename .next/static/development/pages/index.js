@@ -1,5 +1,52 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
+/***/ "./assets/img/GitLogoSvg.tsx":
+/*!***********************************!*\
+  !*** ./assets/img/GitLogoSvg.tsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _this = undefined,
+    _jsxFileName = "/home/oleksii/Documents/bettermetest/assets/img/GitLogoSvg.tsx";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+var GitLogoSvg = function GitLogoSvg() {
+  return __jsx("svg", {
+    height: "32",
+    viewBox: "0 0 16 16",
+    version: "1.1",
+    width: "32",
+    "aria-hidden": "true",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 2,
+      columnNumber: 3
+    }
+  }, __jsx("path", {
+    fill: "#ffffff",
+    fillRule: "evenodd",
+    d: "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 5
+    }
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (GitLogoSvg);
+
+/***/ }),
+
 /***/ "./assets/img/OcticonSvg.tsx":
 /*!***********************************!*\
   !*** ./assets/img/OcticonSvg.tsx ***!
@@ -133,28 +180,26 @@ var AutocompleteItem = function AutocompleteItem(_ref) {
   return __jsx("div", {
     className: "autocomplete__item autocomplete__item--animation",
     onClick: function onClick() {
-      console.log("search");
-
       _onClick(search);
     },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 11,
       columnNumber: 5
     }
   }, search !== "" && __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 18,
       columnNumber: 9
     }
   }, __jsx(assets_img_SearchSvg__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 19,
       columnNumber: 11
     }
   })), __jsx("div", {
@@ -162,7 +207,7 @@ var AutocompleteItem = function AutocompleteItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 22,
       columnNumber: 7
     }
   }, search !== "" ? search : "No result in cache"), search !== "" && __jsx("div", {
@@ -170,7 +215,7 @@ var AutocompleteItem = function AutocompleteItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 26,
       columnNumber: 9
     }
   }, __jsx("span", {
@@ -178,7 +223,7 @@ var AutocompleteItem = function AutocompleteItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 27,
       columnNumber: 11
     }
   }, "All GitHub"), __jsx("span", {
@@ -186,7 +231,7 @@ var AutocompleteItem = function AutocompleteItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 28,
       columnNumber: 11
     }
   }, "\u21B5")));
@@ -210,11 +255,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styles_Header_global_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styles/Header.global.scss */ "./styles/Header.global.scss");
 /* harmony import */ var styles_Header_global_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styles_Header_global_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var containers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! containers */ "./containers/index.ts");
+/* harmony import */ var assets_img_GitLogoSvg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! assets/img/GitLogoSvg */ "./assets/img/GitLogoSvg.tsx");
 var _this = undefined,
     _jsxFileName = "/home/oleksii/Documents/bettermetest/components/Header.tsx";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -225,7 +272,7 @@ var Header = function Header(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 11,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -233,7 +280,7 @@ var Header = function Header(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 12,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -241,37 +288,22 @@ var Header = function Header(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 13,
       columnNumber: 9
     }
-  }, __jsx("svg", {
-    height: "32",
-    viewBox: "0 0 16 16",
-    version: "1.1",
-    width: "32",
-    "aria-hidden": "true",
+  }, __jsx(assets_img_GitLogoSvg__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 14,
       columnNumber: 11
     }
-  }, __jsx("path", {
-    fill: "#ffffff",
-    fillRule: "evenodd",
-    d: "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 13
-    }
-  }))), __jsx(containers__WEBPACK_IMPORTED_MODULE_2__["Search"], {
+  })), __jsx(containers__WEBPACK_IMPORTED_MODULE_2__["Search"], {
     onSearch: onSearch,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 16,
       columnNumber: 9
     }
   })));
@@ -317,7 +349,7 @@ var Language = function Language(_ref) {
   }, __jsx("div", {
     className: "d-ib",
     style: {
-      backgroundColor: "".concat(assets_laguage_json__WEBPACK_IMPORTED_MODULE_2__[language].color)
+      backgroundColor: "".concat(assets_laguage_json__WEBPACK_IMPORTED_MODULE_2__[language] && assets_laguage_json__WEBPACK_IMPORTED_MODULE_2__[language].color)
     },
     __self: _this,
     __source: {
@@ -330,7 +362,7 @@ var Language = function Language(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 16,
       columnNumber: 9
     }
   }, " ", language));
@@ -629,10 +661,10 @@ var ItemTopics = function ItemTopics(_ref) {
 
 /***/ }),
 
-/***/ "./components/Pagination.tsx":
-/*!***********************************!*\
-  !*** ./components/Pagination.tsx ***!
-  \***********************************/
+/***/ "./components/Pagination/PaginationItem.tsx":
+/*!**************************************************!*\
+  !*** ./components/Pagination/PaginationItem.tsx ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -642,56 +674,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styles_Pagination_global_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styles/Pagination.global.scss */ "./styles/Pagination.global.scss");
-/* harmony import */ var styles_Pagination_global_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styles_Pagination_global_scss__WEBPACK_IMPORTED_MODULE_2__);
 var _this = undefined,
-    _jsxFileName = "/home/oleksii/Documents/bettermetest/components/Pagination.tsx";
+    _jsxFileName = "/home/oleksii/Documents/bettermetest/components/Pagination/PaginationItem.tsx";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-
-
-var paginationValues = function paginationValues(count, current) {
-  var res = [];
-
-  if (count > 9) {
-    res.push("1");
-    res.push("2");
-
-    if (current > 5) {
-      res.push("...");
-      res.push((current - 2).toString());
-      res.push((current - 1).toString());
-      res.push(current.toString());
-      res.push((current + 1).toString());
-      res.push((current + 2).toString());
-
-      if (count - current > 3) {
-        res.push("...");
-        res.push((count - 1).toString());
-        res.push(count.toString());
-      } else {
-        res.push((count - 2).toString());
-        res.push((count - 1).toString());
-        res.push(count.toString());
-      }
-    } else {
-      res.push("3");
-      res.push("4");
-      res.push("5");
-      res.push("...");
-      res.push((count - 2).toString());
-      res.push((count - 1).toString());
-    }
-  } else {
-    for (var i = 1; i <= current; i++) {
-      res.push(i.toString());
-    }
-  }
-
-  return res;
-};
 
 var PaginationItem = function PaginationItem(_ref) {
   var disable = _ref.disable,
@@ -709,27 +697,55 @@ var PaginationItem = function PaginationItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 17,
       columnNumber: 5
     }
   }, text);
 };
 
-var Pagination = function Pagination(_ref2) {
-  var count = _ref2.count,
-      _ref2$current = _ref2.current,
-      current = _ref2$current === void 0 ? 1 : _ref2$current,
-      onClick = _ref2.onClick;
-  var paginationArray = paginationValues(count, current);
+/* harmony default export */ __webpack_exports__["default"] = (PaginationItem);
+
+/***/ }),
+
+/***/ "./components/Pagination/index.tsx":
+/*!*****************************************!*\
+  !*** ./components/Pagination/index.tsx ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! utils */ "./utils/index.ts");
+/* harmony import */ var _PaginationItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PaginationItem */ "./components/Pagination/PaginationItem.tsx");
+/* harmony import */ var styles_Pagination_global_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styles/Pagination.global.scss */ "./styles/Pagination.global.scss");
+/* harmony import */ var styles_Pagination_global_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styles_Pagination_global_scss__WEBPACK_IMPORTED_MODULE_3__);
+var _this = undefined,
+    _jsxFileName = "/home/oleksii/Documents/bettermetest/components/Pagination/index.tsx";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+var Pagination = function Pagination(_ref) {
+  var count = _ref.count,
+      _ref$current = _ref.current,
+      current = _ref$current === void 0 ? 1 : _ref$current,
+      onClick = _ref.onClick;
+  var paginationArray = Object(utils__WEBPACK_IMPORTED_MODULE_1__["paginationValues"])(count, current);
   return __jsx("div", {
     className: "pagination",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 17,
       columnNumber: 5
     }
-  }, __jsx(PaginationItem, {
+  }, __jsx(_PaginationItem__WEBPACK_IMPORTED_MODULE_2__["default"], {
     disable: current === 1,
     enable: false,
     text: "Previous",
@@ -737,11 +753,11 @@ var Pagination = function Pagination(_ref2) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 18,
       columnNumber: 7
     }
   }), paginationArray.map(function (item, index) {
-    return __jsx(PaginationItem, {
+    return __jsx(_PaginationItem__WEBPACK_IMPORTED_MODULE_2__["default"], {
       disable: item === "...",
       enable: item === current.toString(),
       text: item,
@@ -749,11 +765,11 @@ var Pagination = function Pagination(_ref2) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74,
+        lineNumber: 26,
         columnNumber: 11
       }
     });
-  }), __jsx(PaginationItem, {
+  }), __jsx(_PaginationItem__WEBPACK_IMPORTED_MODULE_2__["default"], {
     disable: current === count,
     enable: false,
     text: "Next",
@@ -761,7 +777,7 @@ var Pagination = function Pagination(_ref2) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 34,
       columnNumber: 7
     }
   }));
@@ -1025,11 +1041,67 @@ var Search = function Search(_ref) {
 
 /***/ }),
 
+/***/ "./components/SearchResult.tsx":
+/*!*************************************!*\
+  !*** ./components/SearchResult.tsx ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components */ "./components/index.ts");
+var _this = undefined,
+    _jsxFileName = "/home/oleksii/Documents/bettermetest/components/SearchResult.tsx";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var SearchResult = function SearchResult(_ref) {
+  var total_count = _ref.total_count,
+      repos = _ref.repos;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    className: "content-center",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 7
+    }
+  }, __jsx("h3", {
+    className: "search-result-header",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 9
+    }
+  }, total_count.toLocaleString(), " repository results"), repos.map(function (item, index) {
+    return __jsx(components__WEBPACK_IMPORTED_MODULE_1__["RepoItem"], {
+      key: index,
+      item: item,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17,
+        columnNumber: 18
+      }
+    });
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SearchResult);
+
+/***/ }),
+
 /***/ "./components/index.ts":
 /*!*****************************!*\
   !*** ./components/index.ts ***!
   \*****************************/
-/*! exports provided: Header, Search, AutocompleteItem, RepoItem, ItemTopics, Pagination */
+/*! exports provided: Header, Search, AutocompleteItem, RepoItem, ItemTopics, Pagination, SearchResult */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1049,8 +1121,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ItemTopics__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ItemTopics */ "./components/ItemTopics.tsx");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ItemTopics", function() { return _ItemTopics__WEBPACK_IMPORTED_MODULE_4__["default"]; });
 
-/* harmony import */ var _Pagination__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Pagination */ "./components/Pagination.tsx");
+/* harmony import */ var _Pagination__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Pagination */ "./components/Pagination/index.tsx");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Pagination", function() { return _Pagination__WEBPACK_IMPORTED_MODULE_5__["default"]; });
+
+/* harmony import */ var _SearchResult__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SearchResult */ "./components/SearchResult.tsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SearchResult", function() { return _SearchResult__WEBPACK_IMPORTED_MODULE_6__["default"]; });
+
 
 
 
@@ -1159,77 +1235,17 @@ var Search = function Search(_ref) {
 
 /***/ }),
 
-/***/ "./containers/SearchResult.tsx":
-/*!*************************************!*\
-  !*** ./containers/SearchResult.tsx ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components */ "./components/index.ts");
-var _this = undefined,
-    _jsxFileName = "/home/oleksii/Documents/bettermetest/containers/SearchResult.tsx";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-var SearchResult = function SearchResult(_ref) {
-  var total_count = _ref.total_count,
-      repos = _ref.repos;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
-    className: "content-center",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 7
-    }
-  }, __jsx("h3", {
-    className: "search-result-header",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 9
-    }
-  }, total_count.toLocaleString(), " repository results"), repos.map(function (item, index) {
-    return __jsx(components__WEBPACK_IMPORTED_MODULE_1__["RepoItem"], {
-      key: index,
-      item: item,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17,
-        columnNumber: 18
-      }
-    });
-  })));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (SearchResult);
-
-/***/ }),
-
 /***/ "./containers/index.ts":
 /*!*****************************!*\
   !*** ./containers/index.ts ***!
   \*****************************/
-/*! exports provided: Search, SearchResult */
+/*! exports provided: Search */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Search__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Search */ "./containers/Search.tsx");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Search", function() { return _Search__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-/* harmony import */ var _SearchResult__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SearchResult */ "./containers/SearchResult.tsx");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SearchResult", function() { return _SearchResult__WEBPACK_IMPORTED_MODULE_1__["default"]; });
-
 
 
 
@@ -8036,10 +8052,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var store_repoSearch_actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! store/repoSearch/actions */ "./store/repoSearch/actions.ts");
 /* harmony import */ var components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! components */ "./components/index.ts");
-/* harmony import */ var containers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! containers */ "./containers/index.ts");
 var _jsxFileName = "/home/oleksii/Documents/bettermetest/pages/index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
 
 
 
@@ -8058,7 +8072,12 @@ function HomePage(_ref) {
       curRequest = _useState2[0],
       setCurRequest = _useState2[1];
 
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      loading = _useState3[0],
+      setloading = _useState3[1];
+
   var onSearch = function onSearch(request) {
+    setloading(true);
     setCurRequest(request);
     fetchSearch({
       q: request,
@@ -8071,6 +8090,8 @@ function HomePage(_ref) {
   };
 
   var onPaginationClick = function onPaginationClick(value) {
+    setloading(true);
+
     if (value === "Previous") {
       if (curPage !== 1) setCurPage(curPage - 1);
     } else if (value === "Next") {
@@ -8091,22 +8112,26 @@ function HomePage(_ref) {
       per_page: 30,
       page: curPage
     });
+    setloading(true);
   }, [curPage]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    setloading(false);
+  }, [repos]);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(components__WEBPACK_IMPORTED_MODULE_3__["Header"], {
     onSearch: onSearch,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 56,
       columnNumber: 7
     }
-  }), repos && __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(containers__WEBPACK_IMPORTED_MODULE_4__["SearchResult"], {
+  }), repos && !loading && __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(components__WEBPACK_IMPORTED_MODULE_3__["SearchResult"], {
     total_count: total_count,
     repos: repos,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 59,
       columnNumber: 11
     }
   }), __jsx("div", {
@@ -8114,7 +8139,7 @@ function HomePage(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 60,
       columnNumber: 11
     }
   }, __jsx(components__WEBPACK_IMPORTED_MODULE_3__["Pagination"], {
@@ -8124,10 +8149,25 @@ function HomePage(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 61,
       columnNumber: 13
     }
-  }))));
+  }))), loading && __jsx("div", {
+    className: "content-center",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 9
+    }
+  }, __jsx("h3", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 11
+    }
+  }, "Loading...")));
 }
 
 var mapStateToProps = function mapStateToProps(_ref2) {
@@ -8474,7 +8514,7 @@ var getRequestParser = function getRequestParser(searchRequest) {
 /*!************************!*\
   !*** ./utils/index.ts ***!
   \************************/
-/*! exports provided: getRequestParser, searchCache */
+/*! exports provided: getRequestParser, searchCache, paginationValues */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8484,6 +8524,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony import */ var _searchCache__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./searchCache */ "./utils/searchCache.ts");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "searchCache", function() { return _searchCache__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+/* harmony import */ var _paginationValues__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./paginationValues */ "./utils/paginationValues.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "paginationValues", function() { return _paginationValues__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
 
 
 
@@ -8504,6 +8548,60 @@ var kFormatter = function kFormatter(num, fixed) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (kFormatter);
+
+/***/ }),
+
+/***/ "./utils/paginationValues.ts":
+/*!***********************************!*\
+  !*** ./utils/paginationValues.ts ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var paginationValues = function paginationValues(count, current) {
+  var res = [];
+
+  if (count > 9) {
+    res.push("1");
+    res.push("2");
+
+    if (current > 5) {
+      res.push("...");
+      res.push((current - 2).toString());
+      res.push((current - 1).toString());
+      res.push(current.toString());
+      res.push((current + 1).toString());
+      res.push((current + 2).toString());
+
+      if (count - current > 3) {
+        res.push("...");
+        res.push((count - 1).toString());
+        res.push(count.toString());
+      } else {
+        res.push((count - 2).toString());
+        res.push((count - 1).toString());
+        res.push(count.toString());
+      }
+    } else {
+      res.push("3");
+      res.push("4");
+      res.push("5");
+      res.push("...");
+      res.push((count - 2).toString());
+      res.push((count - 1).toString());
+    }
+  } else {
+    for (var i = 1; i <= count; i++) {
+      res.push(i.toString());
+    }
+  }
+
+  return res;
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (paginationValues);
 
 /***/ }),
 
@@ -8544,7 +8642,7 @@ var GIT_SEARCH_CACHE = "gitSearchCache";
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Foleksii%2FDocuments%2Fbettermetest%2Fpages%2Findex.tsx ***!
   \*********************************************************************************************************************************/
@@ -8567,5 +8665,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[3,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
