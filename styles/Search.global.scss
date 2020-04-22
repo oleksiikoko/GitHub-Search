@@ -39,6 +39,9 @@
       border-bottom-right-radius: 0;
       border-bottom: 1px solit black;
       background-color: #fafbfc;
+      .autocomplete__item {
+        width: 470px !important;
+      }
       input {
         color: black;
         &::placeholder {

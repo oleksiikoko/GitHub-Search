@@ -13,8 +13,8 @@ const SearchResult: React.FC<IProps> = ({ total_count, repos }) => {
         <h3 className="search-result-header">
           {total_count.toLocaleString()} repository results
         </h3>
-        {repos.map((item) => {
-          return <RepoItem item={item} />;
+        {repos.map((item, index) => {
+          return <RepoItem key={index} item={item} />;
         })}
       </div>
     </>

@@ -6,6 +6,17 @@
   padding-right: 2px;
 }
 
+.div-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.d-ib {
+  display: inline-block;
+}
+
 .content-center {
   width: 100%;
   display: flex;
