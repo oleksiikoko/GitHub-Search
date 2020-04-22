@@ -6722,7 +6722,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _this = undefined,
-    _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/pages/_app.tsx";
+    _jsxFileName = "/home/oleksii/Documents/bettermetest/pages/_app.tsx";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
@@ -6857,7 +6857,7 @@ var SET_SEARCH_RESULT = "SET_REPO_SEARCH_RESULT";
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.tsx!./");
-module.exports = __webpack_require__(/*! /home/oleksii/Documents/Programming/BetterMeTest/node_modules/next/dist/client/router.js */"./node_modules/next/dist/client/router.js");
+module.exports = __webpack_require__(/*! /home/oleksii/Documents/bettermetest/node_modules/next/dist/client/router.js */"./node_modules/next/dist/client/router.js");
 
 
 /***/ }),

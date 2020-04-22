@@ -3,8 +3,7 @@ import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 
 import searchReposActions from "store/repoSearch/actions";
-import { Header, Pagination } from "components";
-import { SearchResult } from "containers";
+import { Header, Pagination, SearchResult } from "components";
 
 function HomePage({ total_count, repos, fetchSearch }) {
   const [curPage, setCurPage] = useState(1);
@@ -23,7 +22,7 @@ function HomePage({ total_count, repos, fetchSearch }) {
   };
 
   const onPaginationClick = (value) => {
-    if (value === "Prev") {
+    if (value === "Previous") {
       if (curPage !== 1) setCurPage(curPage - 1);
     } else if (value === "Next") {
       if (curPage !== Math.floor(total_count / 30)) setCurPage(curPage + 1);

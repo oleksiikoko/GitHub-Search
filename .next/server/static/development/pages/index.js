@@ -88,10 +88,96 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./assets/img/OcticonSvg.tsx":
+/*!***********************************!*\
+  !*** ./assets/img/OcticonSvg.tsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/assets/img/OcticonSvg.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+const OcticonSvg = () => __jsx("svg", {
+  height: "16",
+  width: "16",
+  "aria-label": "Search",
+  viewBox: "0 0 16 16",
+  version: "1.1",
+  role: "img",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 2,
+    columnNumber: 3
+  }
+}, __jsx("path", {
+  fillRule: "evenodd",
+  d: "M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10,
+    columnNumber: 5
+  }
+}));
+
+/* harmony default export */ __webpack_exports__["default"] = (OcticonSvg);
+
+/***/ }),
+
+/***/ "./assets/img/SearchSvg.tsx":
+/*!**********************************!*\
+  !*** ./assets/img/SearchSvg.tsx ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/assets/img/SearchSvg.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+const SearchSvg = () => __jsx("svg", {
+  height: "16",
+  width: "16",
+  "aria-label": "Search",
+  viewBox: "0 0 16 16",
+  version: "1.1",
+  role: "img",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 2,
+    columnNumber: 3
+  }
+}, __jsx("path", {
+  fillRule: "evenodd",
+  d: "M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10,
+    columnNumber: 5
+  }
+}));
+
+/* harmony default export */ __webpack_exports__["default"] = (SearchSvg);
+
+/***/ }),
 
 /***/ "./assets/laguage.json":
 /*!*****************************!*\
@@ -117,9 +203,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styles_AutocompleteItem_global_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styles/AutocompleteItem.global.scss */ "./styles/AutocompleteItem.global.scss");
 /* harmony import */ var styles_AutocompleteItem_global_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styles_AutocompleteItem_global_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/components/AutocompleteItem.tsx";
+/* harmony import */ var assets_img_SearchSvg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! assets/img/SearchSvg */ "./assets/img/SearchSvg.tsx");
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/components/AutocompleteItem.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 const AutocompleteItem = ({
@@ -135,44 +223,29 @@ const AutocompleteItem = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 9,
       columnNumber: 5
     }
   }, search !== "" && __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 17,
       columnNumber: 9
     }
-  }, __jsx("svg", {
-    height: "16",
-    width: "16",
-    "aria-label": "Search",
-    viewBox: "0 0 16 16",
-    version: "1.1",
-    role: "img",
+  }, __jsx(assets_img_SearchSvg__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 18,
       columnNumber: 11
     }
-  }, __jsx("path", {
-    fillRule: "evenodd",
-    d: "M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 13
-    }
-  }))), __jsx("div", {
+  })), __jsx("div", {
     className: "repo-name",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 21,
       columnNumber: 7
     }
   }, search !== "" ? search : "No result in cache"), search !== "" && __jsx("div", {
@@ -180,7 +253,7 @@ const AutocompleteItem = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 25,
       columnNumber: 9
     }
   }, __jsx("span", {
@@ -188,7 +261,7 @@ const AutocompleteItem = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 26,
       columnNumber: 11
     }
   }, "All GitHub"), __jsx("span", {
@@ -196,7 +269,7 @@ const AutocompleteItem = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 27,
       columnNumber: 11
     }
   }, "\u21B5")));
@@ -220,7 +293,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styles_Header_global_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styles/Header.global.scss */ "./styles/Header.global.scss");
 /* harmony import */ var styles_Header_global_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styles_Header_global_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var containers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! containers */ "./containers/index.ts");
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/components/Header.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/components/Header.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -305,7 +378,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var assets_laguage_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! assets/laguage.json */ "./assets/laguage.json");
 var assets_laguage_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! assets/laguage.json */ "./assets/laguage.json", 1);
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/components/ItemAbout/Language.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/components/ItemAbout/Language.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -359,7 +432,7 @@ const Language = ({
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/components/ItemAbout/License.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/components/ItemAbout/License.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -395,7 +468,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "classnames");
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var utils_kFormatter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! utils/kFormatter */ "./utils/kFormatter.ts");
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/components/ItemAbout/Stars.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/components/ItemAbout/Stars.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -468,7 +541,7 @@ const Stars = ({
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/components/ItemAbout/Updated.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/components/ItemAbout/Updated.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -505,7 +578,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Language__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Language */ "./components/ItemAbout/Language.tsx");
 /* harmony import */ var _License__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./License */ "./components/ItemAbout/License.tsx");
 /* harmony import */ var _Updated__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Updated */ "./components/ItemAbout/Updated.tsx");
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/components/ItemAbout/index.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/components/ItemAbout/index.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -590,7 +663,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styles_ItemTopics_global_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styles/ItemTopics.global.scss */ "./styles/ItemTopics.global.scss");
 /* harmony import */ var styles_ItemTopics_global_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styles_ItemTopics_global_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/components/ItemTopics.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/components/ItemTopics.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -606,23 +679,23 @@ const ItemTopics = ({
       lineNumber: 9,
       columnNumber: 5
     }
-  }, topics.map((topic, index) => {
+  }, topics && topics.map((topic, index) => {
     return __jsx("a", {
       key: index,
       href: `https://github.com/topics/${topic}`,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12,
-        columnNumber: 11
+        lineNumber: 13,
+        columnNumber: 13
       }
     }, __jsx("div", {
       className: "topics__topic",
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13,
-        columnNumber: 13
+        lineNumber: 14,
+        columnNumber: 15
       }
     }, topic));
   }));
@@ -647,7 +720,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styles_Pagination_global_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styles/Pagination.global.scss */ "./styles/Pagination.global.scss");
 /* harmony import */ var styles_Pagination_global_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styles_Pagination_global_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/components/Pagination.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/components/Pagination.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -692,6 +765,27 @@ const paginationValues = (count, current) => {
   return res;
 };
 
+const PaginationItem = ({
+  disable,
+  enable,
+  text,
+  onClick
+}) => {
+  return __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()("pagination__item", {
+      "pagination__item--enable": enable,
+      "pagination__item--disable": disable
+    }),
+    onClick: () => onClick(text),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 5
+    }
+  }, text);
+};
+
 const Pagination = ({
   count,
   current = 1,
@@ -703,49 +797,45 @@ const Pagination = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 65,
       columnNumber: 5
     }
-  }, __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()("pagination__item", {
-      // "pagination__item--enable": item === current.toString(),
-      "pagination__item--disable": current === 1
-    }),
-    onClick: () => onClick("Prev"),
+  }, __jsx(PaginationItem, {
+    disable: current === 1,
+    enable: false,
+    text: "Previous",
+    onClick: onClick,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 66,
       columnNumber: 7
     }
-  }, "Previous"), paginationArray.map((item, index) => {
-    return __jsx("div", {
-      key: index,
-      className: classnames__WEBPACK_IMPORTED_MODULE_1___default()("pagination__item", {
-        "pagination__item--enable": item === current.toString(),
-        "pagination__item--disable": item === "..."
-      }),
-      onClick: () => onClick(item),
+  }), paginationArray.map((item, index) => {
+    return __jsx(PaginationItem, {
+      disable: item === "...",
+      enable: item === current.toString(),
+      text: item,
+      onClick: onClick,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58,
+        lineNumber: 74,
         columnNumber: 11
       }
-    }, item);
-  }), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()("pagination__item", {
-      // "pagination__item--enable": item === current.toString(),
-      "pagination__item--disable": current === count
-    }),
-    onClick: () => onClick("Next"),
+    });
+  }), __jsx(PaginationItem, {
+    disable: current === count,
+    enable: false,
+    text: "Next",
+    onClick: onClick,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 82,
       columnNumber: 7
     }
-  }, "Next"));
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Pagination);
@@ -763,13 +853,15 @@ const Pagination = ({
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styles_RepoItem_global_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styles/RepoItem.global.scss */ "./styles/RepoItem.global.scss");
-/* harmony import */ var styles_RepoItem_global_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styles_RepoItem_global_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! components */ "./components/index.ts");
-/* harmony import */ var _ItemAbout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ItemAbout */ "./components/ItemAbout/index.tsx");
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/components/RepoItem.tsx";
+/* harmony import */ var components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components */ "./components/index.ts");
+/* harmony import */ var _ItemAbout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ItemAbout */ "./components/ItemAbout/index.tsx");
+/* harmony import */ var styles_RepoItem_global_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styles/RepoItem.global.scss */ "./styles/RepoItem.global.scss");
+/* harmony import */ var styles_RepoItem_global_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styles_RepoItem_global_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var assets_img_OcticonSvg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! assets/img/OcticonSvg */ "./assets/img/OcticonSvg.tsx");
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/components/RepoItem.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -779,7 +871,6 @@ const RepoItem = ({
 }) => {
   const {
     full_name,
-    owner,
     html_url,
     description,
     stargazers_count,
@@ -794,7 +885,7 @@ const RepoItem = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 27,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -802,37 +893,22 @@ const RepoItem = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 28,
       columnNumber: 7
     }
-  }, __jsx("svg", {
-    height: "16",
-    viewBox: "0 0 12 16",
-    version: "1.1",
-    width: "12",
-    "aria-hidden": "true",
+  }, __jsx(assets_img_OcticonSvg__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 29,
       columnNumber: 9
     }
-  }, __jsx("path", {
-    fill: "#586069",
-    fillRule: "evenodd",
-    d: "M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 11
-    }
-  }))), __jsx("div", {
+  })), __jsx("div", {
     className: "repo-item__info",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 31,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -840,7 +916,7 @@ const RepoItem = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 32,
       columnNumber: 9
     }
   }, __jsx("a", {
@@ -848,7 +924,7 @@ const RepoItem = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 33,
       columnNumber: 11
     }
   }, full_name)), __jsx("p", {
@@ -856,18 +932,18 @@ const RepoItem = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 35,
       columnNumber: 9
     }
-  }, description), __jsx(components__WEBPACK_IMPORTED_MODULE_2__["ItemTopics"], {
+  }, description), __jsx(components__WEBPACK_IMPORTED_MODULE_1__["ItemTopics"], {
     topics: topics,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 36,
       columnNumber: 9
     }
-  }), __jsx(_ItemAbout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), __jsx(_ItemAbout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     full_name: full_name,
     stargazers_count: stargazers_count,
     language: language,
@@ -877,7 +953,7 @@ const RepoItem = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 37,
       columnNumber: 9
     }
   })));
@@ -902,7 +978,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! utils */ "./utils/index.ts");
 /* harmony import */ var containers_Autocomplete__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! containers/Autocomplete */ "./containers/Autocomplete.tsx");
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/components/Search.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/components/Search.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -954,7 +1030,7 @@ const Search = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 38,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -964,7 +1040,7 @@ const Search = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 39,
       columnNumber: 7
     }
   }, __jsx("input", {
@@ -978,7 +1054,7 @@ const Search = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 44,
       columnNumber: 9
     }
   }), __jsx("img", {
@@ -987,7 +1063,7 @@ const Search = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 54,
       columnNumber: 9
     }
   })), __jsx("div", {
@@ -995,7 +1071,7 @@ const Search = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 59,
       columnNumber: 7
     }
   }, inputFocused && __jsx(containers_Autocomplete__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1008,7 +1084,7 @@ const Search = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 61,
       columnNumber: 11
     }
   })));
@@ -1066,7 +1142,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components */ "./components/index.ts");
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/containers/Autocomplete.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/containers/Autocomplete.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -1124,7 +1200,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components */ "./components/index.ts");
 /* harmony import */ var styles_Search_global_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styles/Search.global.scss */ "./styles/Search.global.scss");
 /* harmony import */ var styles_Search_global_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styles_Search_global_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/containers/Search.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/containers/Search.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -1160,7 +1236,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components */ "./components/index.ts");
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/containers/SearchResult.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/containers/SearchResult.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -1274,7 +1350,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var store_repoSearch_actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! store/repoSearch/actions */ "./store/repoSearch/actions.ts");
 /* harmony import */ var components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! components */ "./components/index.ts");
 /* harmony import */ var containers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! containers */ "./containers/index.ts");
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/pages/index.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/pages/index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1309,7 +1385,7 @@ function HomePage({
   };
 
   const onPaginationClick = value => {
-    if (value === "Prev") {
+    if (value === "Previous") {
       if (curPage !== 1) setCurPage(curPage - 1);
     } else if (value === "Next") {
       if (curPage !== Math.floor(total_count / 30)) setCurPage(curPage + 1);
@@ -1722,14 +1798,14 @@ const GIT_SEARCH_CACHE = "gitSearchCache";
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/oleksii/Documents/Programming/BetterMeTest/pages/index.tsx */"./pages/index.tsx");
+module.exports = __webpack_require__(/*! /home/oleksii/Documents/bettermetest/pages/index.tsx */"./pages/index.tsx");
 
 
 /***/ }),

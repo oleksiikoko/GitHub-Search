@@ -113,7 +113,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styles_CSSReset_global_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styles_CSSReset_global_scss__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var styles_index_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styles/index.scss */ "./styles/index.scss");
 /* harmony import */ var styles_index_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(styles_index_scss__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "/home/oleksii/Documents/Programming/BetterMeTest/pages/_app.tsx";
+var _jsxFileName = "/home/oleksii/Documents/bettermetest/pages/_app.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
