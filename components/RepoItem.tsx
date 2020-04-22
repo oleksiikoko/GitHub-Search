@@ -1,7 +1,5 @@
 import "styles/RepoItem.global.scss";
-import languageConfig from "assets/laguage.json";
 import { IRepositoryItem } from "interfaces";
-import kFormatter from "utils/kFormatter";
 
 import { ItemTopics } from "components";
 import ItemAbout from "./ItemAbout";
